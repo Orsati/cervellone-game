@@ -1,0 +1,138 @@
+body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.projector-screen {
+  padding: 2rem;
+}
+
+.main-title {
+  font-size: 5rem;
+  color: #f7b733;
+  margin-bottom: 2rem;
+}
+
+.lobby-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.players-list {
+  background-color: #16213e;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 700px;
+}
+
+.players-list h2 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #f7b733;
+  padding-bottom: 1rem;
+  margin-top: 0;
+}
+
+.players-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.players-list li {
+  background-color: #0f3460;
+  margin: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.qr-code-container {
+  background-color: #16213e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.qr-code-wrapper {
+  background-color: white;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.network-url {
+  font-family: monospace;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #aaa;
+}
+
+/* ... (tutti gli altri stili per question, results, timer, ecc. rimangono validi) ... */
+.start-button, .correct-button, .incorrect-button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.start-button { background-color: #4caf50; color: white; }
+.start-button:hover { background-color: #45a049; }
+.correct-button { background-color: #28a745; color: white; }
+.incorrect-button { background-color: #dc3545; color: white; }
+
+.question-display, .results-display { padding: 2rem; }
+.question-type { color: #f7b733; text-transform: uppercase; letter-spacing: 2px; font-size: 1.5rem; margin-bottom: -1rem; }
+h2 { font-size: 3rem; }
+.options-grid, .final-options { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; font-size: 2rem; }
+.option { background-color: #0f3460; padding: 2rem; border-radius: 8px; }
+.final-options .option.correct { background-color: #4caf50; border: 2px solid white; }
+.final-options .option.incorrect { opacity: 0.5; }
+
+.leaderboard { margin-top: 2rem; }
+.leaderboard h3 { font-size: 2rem; }
+.round-leaderboard { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.round-leaderboard li { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; text-align: left; padding: 0.5rem; background-color: #0f3460; border-radius: 8px;}
+.round-leaderboard .incorrect-answer { opacity: 0.6; }
+.round-score { font-weight: bold; }
+
+.pause-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 100; }
+
+.timer-container { width: 80%; margin: 1rem auto; background-color: #0f3460; border-radius: 20px; border: 2px solid #f7b733; position: relative; height: 40px; overflow: hidden; }
+.timer-bar { background-color: #f7b733; height: 100%; border-radius: 20px; transition: width 1s linear; }
+.timer-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.5rem; font-weight: bold; color: white; }
+.intro-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.intro-subtitle {
+  font-size: 2.5rem;
+  color: #e0e0e0;
+}
+
+.intro-title {
+  font-size: 6rem;
+  color: #f7b733;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

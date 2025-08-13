@@ -1,0 +1,23 @@
+{
+  "name": "cervellone-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "start": "node manager.js",
+  "dev-admin": "npm run dev --prefix admin-panel",
+  "dev": "concurrently \"npm:start\" \"npm:dev-admin\""
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}

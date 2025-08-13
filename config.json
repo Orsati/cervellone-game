@@ -1,0 +1,18 @@
+{
+  "punteggi": {
+    "rispostaCorretta": 100,
+    "bonusVelocitaMax": 50,
+    "penalita": -25
+  },
+  "timers": {
+    "rispostaMultipla": 10000,
+    "veroFalso": 5000,
+    "sbagliaEVinci": 7000
+  },
+  "gameSetup": {
+    "rounds": [
+      ["q1", "q3"],
+      ["q2"]
+    ]
+  }
+}

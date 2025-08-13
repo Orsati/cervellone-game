@@ -1,0 +1,25 @@
+[
+  {
+    "id": "q1",
+    "type": "risposta-multipla",
+    "testoDomanda": "Qual è la capitale dell'Italia?",
+    "opzioni": [ "Parigi", "Roma", "Madrid", "Berlino" ],
+    "rispostaCorretta": "Roma",
+    "duration": 10000
+  },
+  {
+    "id": "q2",
+    "type": "vero-falso",
+    "testoDomanda": "La terra è piatta.",
+    "rispostaCorretta": false,
+    "duration": 4000
+  },
+  {
+    "id": "q3",
+    "type": "sbaglia-e-vinci",
+    "testoDomanda": "Quale di questi NON è un pianeta?",
+    "opzioni": [ "Marte", "Giove", "Luna", "Venere" ],
+    "rispostaCorretta": "Luna",
+    "duration": 7000
+  }
+]
